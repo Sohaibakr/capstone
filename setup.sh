@@ -1,4 +1,3 @@
-
 export AUTH0_DOMAIN='sohaib-fsnd.us.auth0.com'
 export ALGORITHMS='RS256'
 export API_AUDIENCE='capstone-agency'
