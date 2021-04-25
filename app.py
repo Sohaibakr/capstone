@@ -25,7 +25,8 @@ def create_app(test_config=None):
 
     # get all the actors in the database
     @app.route('/actors')
-    def get_actors():
+    @requires_auth('get:actors')
+    def get_actors(jwt):
         actors = Actor.query.all()
 
         # if no actors record, abort the request
@@ -37,7 +38,8 @@ def create_app(test_config=None):
 
     # get all the movies in the database
     @app.route('/movies')
-    def get_movies():
+    @requires_auth('get:movies')
+    def get_movies(jwt):
         movies = Movie.query.all()
 
         # if no movies record, abort the request
