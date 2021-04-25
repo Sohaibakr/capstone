@@ -1,4 +1,6 @@
 
-export AUTH0_DOMAIN='ahemd.us.auth0.com'
+export AUTH0_DOMAIN='sohaib-fsnd.us.auth0.com'
 export ALGORITHMS='RS256'
-export API_AUDIENCE='agency'
+export API_AUDIENCE='capstone-agency'
+
+export DATABASE_URL='postgresql://postgres:admin@localhost:5432/fsndcapstone'
